@@ -6,7 +6,8 @@ import java.util.stream.Stream;
 public class OptionalBasics {
     static void test(Optional<String> optString) {
         if(optString.isPresent())
-            System.out.println(optString.get()); else
+            System.out.println(optString.get());
+        else
             System.out.println("Nothing inside!");
     }
     public static void main(String[] args) {
