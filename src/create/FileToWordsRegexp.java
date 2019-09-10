@@ -19,7 +19,7 @@ public class FileToWordsRegexp {
     }
     public static void
     main(String[] args) throws Exception {
-        FileToWordsRegexp fw = new FileToWordsRegexp("/Users/zhangzhuohui/IdeaProjects/idea1/streams/src/Cheese.dat");
+        FileToWordsRegexp fw = new FileToWordsRegexp("src/Cheese.dat");
         fw.stream()
                 .limit(7)
                 .map(w -> w + " ")

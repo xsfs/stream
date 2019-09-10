@@ -33,7 +33,7 @@ public class RandomWords implements Supplier<String> {
     }
     public static void main(String[] args) throws Exception {
         System.out.println(
-                Stream.generate(new RandomWords("/Users/zhangzhuohui/IdeaProjects/idea1/streams/src/Cheese.dat"))
+                Stream.generate(new RandomWords("src/Cheese.dat"))
                         .limit(10)
                         .collect(Collectors.joining(" ")));
     }

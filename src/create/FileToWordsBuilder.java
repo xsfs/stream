@@ -21,7 +21,7 @@ public class FileToWordsBuilder {
     }
 
     public static void main(String[] args) throws Exception {
-        new FileToWordsBuilder("/Users/zhangzhuohui/IdeaProjects/idea1/streams/src/Cheese.dat")
+        new FileToWordsBuilder("src/Cheese.dat")
                 .stream()
                 .limit(7)
                 .map(w -> w + " ")
